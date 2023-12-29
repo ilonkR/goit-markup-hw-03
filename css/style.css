@@ -6,7 +6,21 @@ body{
 ul{
     list-style: none;
 }
+.container{
+    padding-left: 156px;
+    padding-right: 156px;
+    max-width: 1128px;
+} 
 /* HEADER */
+.header-container{   
+   display: flex;
+   width: 1440px;
+   height: 72px;
+   flex-shrink: 0;
+}
+.header-navigation{
+    flex-wrap: wrap;
+} 
 .header-logo{
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -16,11 +30,13 @@ ul{
     text-transform: uppercase;
     color:  #4d5ae5;
     text-decoration: none;
+    margin-right: 158px;
 }
 .header-logo-item{
     font-weight: 700;
     color: #2E2F42;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 .header-menu-list{
    color:  #2e2f42 ;
@@ -72,6 +88,7 @@ ul{
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
+ 
 }
 .hero-button {
     color:#fff;
