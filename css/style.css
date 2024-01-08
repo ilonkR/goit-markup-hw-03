@@ -13,11 +13,10 @@ img{
     width: 1128px;
     padding: 0 15px 0 15px;
     margin: auto;
-}
-/* HEADER */
-.header-container{
     display: flex;
 }
+/* HEADER */
+
 .header-navigation{ 
     display: flex;
     align-items: center;
