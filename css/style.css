@@ -10,12 +10,14 @@ img{
     display: block;
 }
 .container{
-    max-width: 1128px;
+    width: 1128px;
     padding: 0 15px 0 15px;
     margin: auto;
-    
 }
 /* HEADER */
+.header-container{
+    display: flex;
+}
 .header-navigation{ 
     display: flex;
     align-items: center;
@@ -38,12 +40,13 @@ img{
     font-weight: 700;
     color: #2E2F42;
     text-decoration: none;
+    padding: 24px 0;
 }
 .header-menu{
     display: flex;
     gap: 40px;
 }
-.header-menu-list{
+.header-menu-link{
    color:  #2e2f42 ;
    font-family: Roboto;
    font-size: 16px;
@@ -52,9 +55,10 @@ img{
    letter-spacing: 0.02em;
    font-style: normal;
    text-decoration: none;
+   padding: 24px 0;
 }
-.header-menu-list:hover,
-.header-menu-list:focus{
+.header-menu-link:hover,
+.header-menu-link:focus{
     color: 
     #404bbf ;
 }
@@ -90,7 +94,7 @@ img{
 /* HERO */
 .hero {
     background: #2E2F42;
-    padding: 180px 0;
+    padding: 188px 0;
 }
 .hero-title {
     color: #fff;
@@ -122,8 +126,12 @@ img{
 }
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     border: 0;
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -141,17 +149,8 @@ img{
     display: flex;
     gap: 24px;
 }
-.strategy {
-    width: calc((100% - 72px) / 4);
-}
-.punctuality {
-    width: calc((100% - 72px) / 4);
-}
-.diligence {
-    width: calc((100% - 72px) / 4);
-}
-.technologies {
-    width: calc((100% - 72px) / 4);
+.features-container{
+    width: calc((100% - 72px) / 4)
 }
 .features-subtitle { 
     color: #2e2f42;   
@@ -210,33 +209,16 @@ img{
     letter-spacing: 0.02em;
     text-align: center;
 }
-.markgurrero{
+.our-team-container{
     padding: 32px 0;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
-.tomford {
-    padding: 32px 0;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-}
-.camilagarcia {
-    padding: 32px 0;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-}
-.daniewilson {
-    padding: 32px 0;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+.mark{
+    width: calc(( 100% - 48px ) / 3);
+    border-radius: 0 0 4px 4px;
 }
 /* OUR-PORTFOLIO */
-/* .our-portfolio {
-}
-.our-portfolio-item {
-} 
-.our-portfolio-img {
-}*/
 .our-portfolio {
     padding: 120px 0;
 }
@@ -246,9 +228,7 @@ img{
     column-gap: 24px;
     row-gap: 48px;
 }
-/* .our-portfolio-item {
-    
-}  */
+
 .our-portfolio-title {
     font-family: Roboto;
     font-size: 36px;
@@ -266,6 +246,9 @@ img{
     font-weight: 500;
     letter-spacing: 0.02em;
 }
+.banking{
+    width: calc((100% - 48px) / 3);
+}
 .our-portfolio-list{
     flex-wrap: wrap;
     row-gap: 48px;
@@ -281,12 +264,7 @@ img{
 .our-portfolio-subtitle{
     margin-bottom: 8px;
 }
-.our-portfolio-item{
-    width: calc(( 100% - 48px ) / 3);
-} 
-.bankingimg{
-    max-width: 360px;
-}
+
 .our-portfolio-container {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
